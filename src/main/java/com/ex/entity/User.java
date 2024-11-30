@@ -9,6 +9,7 @@ import jakarta.persistence.Table;
 @Table(name = "User_login")
 public class User {
 	@Id
+
 	@Column(name = "user_Id")
 	private Integer Userid;
 	@Column(name = "user_Name")
@@ -17,6 +18,8 @@ public class User {
 	private Integer age;
 	@Column(name = "country")
 	private String Country;
+
+	private String location;
 
 	public User() {
 		// TODO Auto-generated constructor stub
